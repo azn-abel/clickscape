@@ -1,1 +1,1 @@
-"# clickscape chrome extension" 
+# clickscape chrome extension

@@ -1,8 +1,20 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "api",
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "clickscape-api",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-04"
+  "compatibility_date": "2025-05-04",
+  "env": {
+    "preview": {
+      "name": "clickscape-api-preview",
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "CLICKSCAPE_PREVIEW",
+          "database_id": "f6a05659-4396-43e5-a422-b87bc18874b0"
+        }
+      ]
+    }
+  },
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -21,13 +33,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "CLICKSCAPE",
+      "database_id": "aee8de6e-d46d-41e9-912d-ac0cb267e19f"
+    }
+  ]
   // "ai": {
   //   "binding": "AI"
   // },

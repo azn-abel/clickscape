@@ -21,13 +21,14 @@ async function sendToAPI(userId, x, y, timestamp) {
     timestamp,
     site: window.location.hostname,
   };
-  const response = await fetch(BACKEND_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-  });
+  console.log(body);
+  // const response = await fetch(BACKEND_URL, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(body),
+  // });
 }
 
 async function getUserId() {

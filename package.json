@@ -1,6 +1,10 @@
 {
   "name": "clickscape",
   "private": true,
+  "scripts": {
+    "dev:ui": "npm run dev --workspace=app",
+    "dev:api": "npm run dev --workspace=api"
+  },
   "workspaces": [
     "app",
     "api"

@@ -1,3 +1,5 @@
+const BACKEND_URL = "put_url_here";
+
 async function main() {
   const userId = await getUserId();
   window.addEventListener("click", async (event) => {
@@ -19,7 +21,7 @@ async function sendToAPI(userId, x, y, timestamp) {
     timestamp,
     site: window.location.hostname,
   };
-  const response = await fetch("put_url_here", {
+  const response = await fetch(BACKEND_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,1 +1,0 @@
-# clickscape chrome extension

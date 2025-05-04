@@ -1,0 +1,8 @@
+{
+  "name": "clickscape",
+  "private": true,
+  "workspaces": [
+    "app",
+    "api"
+  ]
+}

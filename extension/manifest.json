@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Clickscape",
+  "version": "1.0",
+  "description": "Visualize your clicks on the sites you visit.",
+  "permissions": ["storage"],
+  "icons": {},
+  "host_permissions": [
+    "https://clickscape.dev/*",
+    "https://*.clickscape.pages.dev/*"
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
